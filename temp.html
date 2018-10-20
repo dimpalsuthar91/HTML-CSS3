@@ -2,145 +2,118 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8"><meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
-  <title>Temperature</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Tremperatue</title>
+   
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </head>
 
 <body>
-   <nav class="navbar navbar-default">
-            <div class="container-fluid">
-              
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">Latitude</a>
+       
+                <button type="button" class="navbar-toggle" aria-lable="Toggle navigationd" data-toggle="collapse" data-target="#collapseText"
+                    aria-expanded="false" aria-controls="navbarText">
+                    <span class="sr-only">Toggle navigation icon</span>
+                    <span class="icon-bar"></span>
+                    
                 </button>
-                <a class="navbar-brand" href="index.html">Latitude</a>
-              </div>
-              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots
-                                <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="temp.html">Temperature</a>
-                                </li>
-                                <li>
-                                    <a href="humid.html">Humidity</a>
-                                </li>
-                                <li>
-                                    <a href="cloud.html">Cloudiness</a>
-                                </li>
-                                <li>
-                                    <a href="wind.html">Wind Speed</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="comparison.html">Comparison</a>
-                        </li>
-                        <li>
-                            <a href="data.html">Data</a>
-                        </li>
-                    </ul>
-                </div>
-    
-            </div>
-            <div class="container">
-                <div class="col-md-12">
-                    <div class="sigline">
-                        
-                    </div>
-                </div>
+                
+
+            <div class="collapse navbar-collapse w-100">
+                <ul class="navbar-nav ml-auto">
+                    <li class="item dropdown">
+                        <a href="#" class="item dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots
+                            
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            
+                                <a href="temp.html">Temperature</a>
+                            
+                            
+                                <a href="humid.html">Humidity</a>
+                            
+                            
+                                <a href="cloud.html">Cloudiness</a>
+                            
+                            
+                                <a href="wind.html">Wind Speed</a>
+                            
+                        </div>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="comparison.html">Comparison</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="data.html">Data</a>
+                    </li>
+                </ul>
             </div>
         </nav>
+        </div>
 
-          <div class="container">
-                <div class="row row-grid">
+    <div class="container">
+            <br>
+        <div class="row"><br>
+            <div class="col-md-12 col-md-8 column">
+                <div class="sigline">
                     
-                    <div class="col-md-8">
-                        <div class="box box-left">
-                        <section id="intro">
-                            <h1>Temperature</h1>
-                            <hr>
-                            <figure>
-                                        <a target="_blank" href="Fig1.png">
-                                            <img id="viz-main" src="Fig1.png" alt="Latitude vs. Temperature">
-                                        </a>
-                            </figure>
-                            
-                            <section id="summary">
-                            <p>Temperature is a perfect curve along the line with the highest temperatures along the equator 
-                               and falling as you head North or South. So the closer to the equator you are, the warmer the temperature.
-                            </p>
-                            </section>
-        
-                        </section>
-                        </div>
-                    </div>
-                
-                    
-                    <div class="col-md-4">
-                        <div class="box box-right">
-                        <h2>Visualizations</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    </nav>
+
+    <div class="container">
+       <div class="row row-grid">
+
+            <div class="col-sm-8 ">
+                <div class="box box-left"><br>
+                   
+                        <h1>Tremperatue</h1>
                         <hr>
-        
-                      
-                      <div class="row">
-                            <div class="col-xs-6 col-sm-3 col-md-6">
-                                  <figure>
-                                      <a href="temp.html">
-                                          <img id="landing-viz" src="Fig1.png" alt="Latitude vs. Temperature">
-                                      </a>
-                                  </figure>
-                              </div>
-                          
-                        <div class="col-xs-6 col-sm-3 col-md-6">
-                                <figure>
-                                    <a href="humid.html">
-                                        <img id="landing-viz" src="Fig2.png" alt="Latitude vs. Humidity">
-                                    </a>
-                                </figure>
-                            </div>
-      
-                        <div class="col-xs-6 col-sm-3 col-md-6">
-                                <figure>
-                                    <a href="cloud.html">
-                                        <img id="landing-viz" src="Fig3.png" alt="Latitude vs. Cloudiness">
-                                    </a>
-                                </figure>
-                            </div>
-      
-                        <div class="col-xs-6 col-sm-3 col-md-6">
-                                <figure>
-                                    <a href="wind.html">
-                                        <img id="landing-viz" src="Fig4.png" alt="Latitude vs. Wind Speed">
-                                    </a>
-                                </figure>
-                            </div>
-        
-                            </div>
-                        </div>
-                      </div>
-                          
+  <br>
+                                <img class="sheet" src="Fig1.png" alt="Latitude vs. Temperature" class="sheet" width="400">
+                    
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="box box-right"><br>
+                    <h2>Visualizations</h2>
+                    <hr>
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-3 col-md-6" a href="temp.html">
+                                    <img id="landing-viz" src="Fig1.png" alt="Latitude vs. Temperature" class="sheet" width="100" height="100">
+                                </a>
+                                </div>
+
+                                <div class="col-xs-6 col-sm-3 col-md-6" a href="humid.html">
+                                    <img id="landing-viz" src="Fig2.png" alt="Latitude vs. Humidity" class="sheet" width="100" height="100">
+                                </a>
+                                </div>
+                                <div class="col-xs-6 col-sm-3 col-md-6" a href="cloud.html">
+                                    <img id="landing-viz" src="Fig3.png" alt="Latitude vs. Cloudiness" class="sheet" width="100" height="100">
+                                </a>
+                                </div>
+                                <div class="col-xs-6 col-sm-3 col-md-6" a href="wind.html">
+                                    <img id="landing-viz" src="Fig4.png" alt="Latitude vs. Wind Speed" class="sheet" width="100" height="100">
+                                </a>
+                                </div>
                     </div>
                 </div>
-        
+            </div>
 
-    <script
-    src="https://code.jquery.com/jquery-3.2.1.js"
-    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-    crossorigin="anonymous"></script>
+        </div>
+    </div>
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
-    </script>      
-    </body>
-    </html>
+
+    
+</body>
+
+</html>
